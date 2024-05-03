@@ -1,0 +1,120 @@
+//IMPORT
+@import "variables";
+@import "extend";
+
+//BANNER
+@media only screen and (min-width: 1024px) {
+    main img.main_img{
+        width: 100%;
+        height: 400px;
+        }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    main img.main_img{
+        width: 100%;
+        height: 250px;
+        }
+}
+
+@media only screen and (max-width: 599px) {
+    main img.main_img{
+        width: 100%;
+        height: 150px;
+        }
+}
+
+//MAIN
+
+main{
+    p{span{
+        color: lightgrey;
+        font-size: 20px;
+        display: block;
+        padding: 10px 50px 10px;
+        }
+    }
+    .categoria_text{
+    color: $color-secundario;
+    font-size: 30px;
+    padding-bottom: 20px;
+    }
+    .text_why{
+    color: $color-secundario;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 80px 30px;
+    }
+    h3{
+    color: $color-principal;
+    font-size: 40px;
+    padding: 50px 0px 30px;
+    }
+    h4{
+    color: $color-principal;
+    font-size: 20px;
+    }
+    h5{
+    color: $color-principal;
+    font-size: 30px;
+    padding: 80px 10px 0px;
+    }
+    img.instructor{
+    width: 200px;
+    }
+    img#funakoshi{
+    width: 200px;
+    padding: 50px 10px 0px;
+    }
+    img#img_historia{
+    width: 550px;
+    padding: 50px 10px 0x;
+    }
+    section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    div{
+        text-align: center;
+        span{
+            color: lightgrey;
+        }
+    }
+    }
+    iframe{
+    margin-bottom: 100px;
+    width: 70%;
+    }
+    div table {
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+    /*th{
+        @extend %border;
+    }
+    td{
+        @extend %border;
+    }
+    */
+    }
+}
+//DOJO KUN
+@media only screen and (min-width: 1200px) {
+    main img#dojo_kun{
+        width: 50%;
+        }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+    main img#dojo_kun{
+        width: 70%;
+        }
+}
+
+@media only screen and (max-width: 599px) {
+    main img#dojo_kun{
+        width: 80%;
+        }
+}
